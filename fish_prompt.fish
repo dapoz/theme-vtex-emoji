@@ -195,7 +195,7 @@ function prompt_status -d "the symbols for a non zero exit status, root and back
 end
 
 function prompt_vtex 
-  if test test_vtex
+  if test_vtex
     set -l account (get_vtex_account)
     set -l workspace (get_vtex_workspace)
 	  prompt_segment $color_vtex_bg $color_vtex_str "$icon_root$account $segment_splitter $workspace"
